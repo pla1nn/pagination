@@ -11,6 +11,9 @@ loadButton.addEventListener('click', loadMore);
 
 function onSearch(e) {
   e.preventDefault();
+
+  clearList();
+
   newsApiService.query = e.currentTarget.elements.query.value;
 
   newsApiService.resetPage();
@@ -24,7 +27,7 @@ function loadMore() {
 
 function renderNews(articles) {
   const markUp = articles.map(article => {
-    return `<li>
+    return `<li class="item">
         <a href="${article.url}" target="_blank" rel="noopener noreferrer">
         <article>
         <img src="${article.urlToImage}" alt="" width="480">
@@ -36,4 +39,8 @@ function renderNews(articles) {
         </li>`;
   }).join('');
   list.insertAdjacentHTML('beforeend', markUp)
+}
+
+function clearList() {
+  list.innerHTML = '';
 }

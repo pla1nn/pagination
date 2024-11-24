@@ -9,6 +9,8 @@ body {
     padding: 15px;
     margin-left: 10px;
     border: 1px solid #444;
+    outline: none;
+    margin-bottom: 20px;
 }
 
 .search_button {
@@ -22,8 +24,15 @@ body {
 
 .list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+.item {
+    width: 260px;
+    height: 450px;
+    overflow: hidden;
 }
 
 .load_button {
