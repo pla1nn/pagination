@@ -31,9 +31,11 @@ function renderNews(articles) {
         <a href="${article.url}" target="_blank" rel="noopener noreferrer">
         <article>
         <img src="${article.urlToImage}" alt="" width="480">
-        <h2>${article.title}</h2>
+        <div class="item_box">
+        <h2 class="article_title">${article.title}</h2>
         <p>Posted by: ${article.author}</p>
         <p>${article.description}</p>
+        </div>
         </article>
         </a>
         </li>`;

@@ -1,5 +1,6 @@
 body {
     margin: 40px;
+    font-family: 'Roboto';
 }
 
 .form {
@@ -33,6 +34,10 @@ body {
     width: 260px;
     height: 450px;
     overflow: hidden;
+
+    border: 1px solid #444;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(84, 84, 247);
 }
 
 .load_button {
@@ -46,4 +51,12 @@ body {
     display: block;
     border: 1px solid #444;
     border-radius: 5px;
+}
+
+.article_title {
+    margin-top: 20px;
+}
+
+.item_box {
+    padding: 5px;
 }
